@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(assets/header-image.png);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding: 10px 8%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.logo {
+    width: 150px;
+    cursor: pointer;
+}
+
+nav button {
+    border: 0;
+    outline: 0;
+    background: #db0001;
+    color: white;
+    padding: 7px 20px;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.down-lang{
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 2px solid white;
+    padding: 7px 10px;
+}
+button img{
+    width: 10px;
+    margin-left: 8px;
+}
+
+.header-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin-top: 100px;
+}
+.header-content h1{
+    font-weight: 600;
+    line-height: 70px;
+    font-size: 60px;
+    max-width: 650px;
+}
+.header-content h5{
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+.signUp-form{
+    background: white;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    overflow: hidden;
+}
+.signUp-form input{
+    flex: 1;
+    border: 0;
+    outline:0;
+    margin-left: 20px;
+}
+.signUp-form button{
+    background: #db0001;
+    border: 0;
+    outline:0;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    cursor: pointer;
+}
+
+/* Features */
+.features{
+    padding: 50px 12%;
+    font-size: 22px;
+}
+.row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+.text-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.img-display{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.img-display img{
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+.features h2{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.faq h3{
+    font-size: 48px;
+    font-weight: 700;
+    padding: 35px 0;
+    text-align: center;
+}
+.accordian{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+.accordian li{
+    list-style: none;
+    width: 100%;
+    padding: 10px;
+}
+.accordian li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+.accordian li:hover{
+    background: #282727;
+}
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+input[type='radio']{
+    display: none;
+}
+.accordian .content{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+.accordian input[type='radio']:checked + label + .content{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+.accordian input[type='radio']:checked + label::after{
+    transform: rotate(135deg);
+}
+small{
+    text-align: center;
+}
+.marginBottom{
+    margin: 12px 35%;
+}
+.footer{
+    font-size: 0.8rem;
+    margin-top: 50px;
+    padding: 25px 5%;
+    color: rgba(255,255,255,0.7);
+}
+.footer p{
+    margin-left: 11%;
+}
+.links{
+    display: flex;
+    justify-content: space-around;
+}
+.links ul{
+    list-style: none;
+}
+.links li{
+    margin:25px;
+}
+.links li a{
+    color: rgba(255,255,255,0.7);
+}
+.btn{
+    color: white;
+    margin-left: 11%;
+    margin-top: 20px;
+}
+.netflix-foot{
+    margin-left: 11%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
